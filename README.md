@@ -8,6 +8,8 @@ standalone process, with job timing, logging, and safe defaults.
 **Note: I did not write this gem, only deployed it to RubyGems. The project appears to be dead and I'll provide
 support the best I can. If the original authors decide they want to take it back over, just let me know.**
 
+Forked from: https://github.com/HouseTrip/rufus-runner
+
 ## Installation
 
 Add this line to your application's Gemfile:
