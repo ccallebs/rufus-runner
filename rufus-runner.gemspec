@@ -8,18 +8,17 @@ Gem::Specification.new do |gem|
   gem.name          = "rufus-runner"
   gem.version       = Rufus::Runner::VERSION
   gem.license       = 'MIT'
-  gem.authors       = ["Julien Letessier"]
-  gem.email         = ["julien.letessier@gmail.com"]
+  gem.authors       = ["Julien Letessier", "Chuck Callebs"]
+  gem.email         = ["julien.letessier@gmail.com", "chuck@callebs.io"]
   gem.description   = %q{Wrapper process around rufus-scheduler}
   gem.summary       = %q{Wrapper process around rufus-scheduler}
-  gem.homepage      = "http://github.com/mezis/rufus-runner"
+  gem.homepage      = "http://github.com/ccallebs/rufus-runner"
 
   gem.add_runtime_dependency 'eventmachine'
   gem.add_runtime_dependency 'rufus-scheduler', '~> 2.0.23'
 
   gem.add_development_dependency 'rake'
   gem.add_development_dependency 'rspec', '~> 2'
-  gem.add_development_dependency 'guard-rspec'
   gem.add_development_dependency 'rb-inotify'
   gem.add_development_dependency 'rb-fsevent'
   gem.add_development_dependency 'rb-fchange'
