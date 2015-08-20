@@ -5,6 +5,8 @@
 Wraps [rufus-scheduler](http://github.com/jmettraux/rufus-scheduler) in a
 standalone process, with job timing, logging, and safe defaults.
 
+**Note: I did not write this gem, only deployed it to RubyGems. The project appears to be dead and I'll provide
+support the best I can. If the original authors decide they want to take it back over, just let me know.*
 
 ## Installation
 
