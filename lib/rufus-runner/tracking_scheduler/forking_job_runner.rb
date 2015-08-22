@@ -14,7 +14,7 @@ class Rufus::TrackingScheduler::ForkingJobRunner < Rufus::TrackingScheduler::Job
     unless status.success?
       raise UnexpectedExitStatus.new(status.exitstatus)
     end
-  rescue Rufus::Scheduler::TimeOutError
+  rescue Rufus::Scheduler::TimeoutError
     log("timed out, killing")
     kill
     raise

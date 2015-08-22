@@ -83,7 +83,7 @@ describe Rufus::TrackingScheduler::ForkingJobRunner do
         end
         Thread.new do
           sleep timeout
-          thread.raise(Rufus::Scheduler::TimeOutError.new) rescue nil
+          thread.raise(Rufus::Scheduler::TimeoutError.new) rescue nil
         end
         thread.join
         result
