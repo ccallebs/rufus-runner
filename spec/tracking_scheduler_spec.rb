@@ -22,7 +22,7 @@ describe Rufus::TrackingScheduler do
   shared_examples_for 'killable' do
     before do
       run_schedule
-      wait_for_file kill_file or raise
+      wait_for_file kill_file or raise 'kill file never came'
     end
 
     it 'and finishes cleanly on SIGINT' do
