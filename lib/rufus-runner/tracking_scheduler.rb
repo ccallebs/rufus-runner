@@ -16,7 +16,7 @@ class Rufus::TrackingScheduler
 
   def initialize(options = {})
     @options = DefaultOptions.merge(options)
-    @scheduler = Rufus::Scheduler::EmScheduler.start_new
+    @scheduler = Rufus::Scheduler.new
     log('scheduler started')
   end
 
