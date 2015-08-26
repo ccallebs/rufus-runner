@@ -100,7 +100,7 @@ class Rufus::TrackingScheduler
 
   def stop_all_jobs
     shutting_down!
-    @scheduler.jobs.each_pair do |job_id, job|
+    @scheduler.jobs.each do |job|
       job.unschedule
     end
     log "all jobs unscheduled"
