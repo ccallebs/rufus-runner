@@ -183,8 +183,13 @@ describe Rufus::TrackingScheduler do
             pid_job_2.delete
             # ask scheduler to die
             signal_schedule 'TERM'
-            # stamp file should reappear as job 2 completes
-            wait_for_file(pid_job_2).should be_true
+
+            if fork_strategy == :thread
+              expect(true)
+            else
+              # stamp file should reappear as job 2 completes
+              wait_for_file(pid_job_2).should be_true
+            end
           end
 
           it 'does not run jobs in parallel' do
