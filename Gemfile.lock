@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    rufus-runner (0.0.3)
+    rufus-runner (0.1.0)
       eventmachine
       rufus-scheduler (~> 3.1)
 
